@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 2 - Website Building</title>
+        <style>
+            body {
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            #login-container {
+                width: 460px;
+                margin: 0 auto;
+            }
+
+            form label,
+            form input {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            form input {
+                padding: 8px;
+            }
+
+            form label {
+                font-weight: bold;
+            }
+
+            form div {
+                margin: 16px 0px;
+            }
+            .icons{
+             position: absolute;
+             top: 40px;
+             right: 36%;
+            }
+            .icons1{
+             position: absolute;
+             top: 110px;
+             right: 36%;
+            }
+            #fols{
+                background-color: red;
+                display: none;
+            }
+            #fols1{
+                background-color: red;
+                display: none;
+            }
+            #right{
+                background-color: green;
+                display: none;
+            }
+            #right1{
+                background-color: green;
+                display: none;
+            }
+        </style>
+        <script defer src="index.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div id="login-container">
+
+            <form>
+                <div>
+                    <label for="username">Username: </label>
+                    <input id="username" type="text">
+                    <img src="done_white_24dp.svg" class="icons" id="right">
+                    <img src="close_white_24dp.svg" class="icons" id="fols" >
+
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input id="password" type="password">
+                    <img src="done_white_24dp.svg" class="icons1" id="right1">
+                    <img src="close_white_24dp.svg" class="icons1" id="fols1">
+
+                 </div>
+                <input type="submit" value="Login">
+                <p id="errorMessage" hidden></p>
+            </form>
+
+        </div>
+
+    </body>
+</html>
